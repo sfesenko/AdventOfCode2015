@@ -10,6 +10,3 @@ let readLines (filePath:string) = seq {
     while not sr.EndOfStream do
         yield sr.ReadLine ()
 }
-
-let bulka =
-    printfn "Fuck off!"
