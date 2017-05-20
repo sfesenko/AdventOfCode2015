@@ -16,7 +16,9 @@ let main argv =
     // Day4.second
     // "day5_input.txt" |> Day5.first
     // "day5_input.txt" |> Day5.second
-    "day6_input.txt" |> Day6.test11
+    // "day6_input.txt" |> Day6.first
+    // "day6_input.txt" |> Day6.secand
+    Day7.first
 
     0 // return an integer exit code
 

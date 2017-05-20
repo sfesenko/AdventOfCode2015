@@ -33,13 +33,8 @@ Target "Deploy" (fun _ ->
     |> Zip buildDir (deployDir + "ApplicationName." + version + ".zip")
 )
 
-Target "FuckOff" (fun _ ->
-    seq [ "Fuck off!" ] |> Log "Ops.. "
-)
-
 // Build order
-"FuckOff"
-  ==> "Clean"
+"Clean"
   ==> "Build"
   ==> "Deploy"
 

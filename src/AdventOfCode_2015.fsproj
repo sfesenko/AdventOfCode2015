@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>AdventOfCode_2015</AssemblyName>
+    <RootNamespace>AdventOfCode_2015</RootNamespace>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>f7ad9690-29ea-4011-b5c3-50cd3500b00f</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AdventOfCode_2015</RootNamespace>
-    <AssemblyName>AdventOfCode_2015</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>Full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath>bin/Debug</OutputPath>
     <DefineConstants>DEBUG</DefineConstants>
-    <PlatformTarget>anycpu</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
-    <PlatformTarget>x64</PlatformTarget>
-  </PropertyGroup>
+    <OutputPath>bin/Release</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+   </PropertyGroup>
+  
   <PropertyGroup>
-    <FSharpTargetsPath>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets</FSharpTargetsPath>
+      <FSharpTargetsPath>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets</FSharpTargetsPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '10.0' OR '$(VisualStudioVersion)' == '11.0'">
     <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets</FSharpTargetsPath>
@@ -43,6 +44,7 @@
     <Compile Include="Day4_The_Ideal_Stocking_Stuffer.fs" />
     <Compile Include="Day5_Doesnt_He_Have_Intern_Elves_For_This.fs" />
     <Compile Include="Day6_Probably_a_Fire_Hazard.fs" />
+    <Compile Include="Day7_Some_Assembly_Required.fs.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,10 +57,10 @@
     <None Include="day3_input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="day5_input.txt" >
+    <None Include="day5_input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="day6_input.txt" >
+    <None Include="day6_input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
